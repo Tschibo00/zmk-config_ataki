@@ -1,0 +1,6 @@
+if SHIELD_ATAKI
+
+config ZMK_KEYBOARD_NAME
+    default "AtaKi"
+
+endif

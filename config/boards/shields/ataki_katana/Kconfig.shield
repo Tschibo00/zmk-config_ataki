@@ -1,4 +1,2 @@
-config SHIELD_ATAKI
-    def_bool $(shields_list_contains,ataki)
 config SHIELD_ATAKI_KATANA
     def_bool $(shields_list_contains,ataki_katakana)
