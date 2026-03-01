@@ -75,11 +75,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
         };
     };
 
-    &msc {
-        time-to-max-speed-ms = <0>;
-        acceleration-exponent = <0>;
-    };
-    
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -87,6 +82,11 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             then-layer = <SYSTEM>;
         };
     };
+
+&msc {
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <0>;
+};
 
 #include "../../../inc/leader_macros.h" 
 #include "../../../inc/combos.h" 
