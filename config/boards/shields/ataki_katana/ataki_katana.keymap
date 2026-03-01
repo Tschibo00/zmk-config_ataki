@@ -19,6 +19,7 @@
 /* Macro timers; can be increased for systems that don't like 0ms Macros */
 #define FAST_MACRO_TAP_MS 0
 #define FAST_MACRO_WAIT_MS 0
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 #define LEADER_HT(hold_layer) &leader_ht hold_layer 0
 
@@ -70,7 +71,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
         encoder_scroll: encoder_scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            bindings = <&msc MOVE_Y(-100)>, <&msc MOVE_Y(100)>;
         };
     };
 
