@@ -74,6 +74,11 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             tap-ms = <20>;
         };
     };
+
+    &msc {
+        time-to-max-speed-ms = <0>;
+        acceleration-exponent = <0>;
+    };
     
     conditional_layers {
         compatible = "zmk,conditional-layers";
