@@ -256,8 +256,3 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
  *                     └───────────┴─────┴───────────┘
  */
 };
-
-&msc {
-    time-to-max-speed-ms = <0>;
-    acceleration-exponent = <0>;
-};
