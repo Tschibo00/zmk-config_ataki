@@ -1,0 +1,66 @@
+{"locationId":""}
+$and:[]
+$or:[]
+"field":"""
+{$ne:""}
+{$regex:""}
+{"technicalProvider":""}
+{"addressGeoLocations.address.countryCode":""}
+{"field":{"$exists":false}}
+#goodMorning
+#feierabend
+#lunch
+#back
+#afk
+#wochenende
+#urlaub :beach_umbrella:
+Alexandra
+Thilo
+Rene
+Sebastian
+Josias
+Barbara
+Saskia
+Christoph
+Daniel
+Florian
+Philipp
+availability
+connector
+dynamic
+evse
+location
+provider
+station
+Azure
+Guten Morgen
+Kubernetes
+:coffeezombie:
+:puzzled:
+:think:
+:this-is-fine-fire:
+:facepalmm:
+:man-shrugging:
+:machete:
+:homerdisappear:
+:homer_scream:
+:(
+:)
+:D
+:+1:
+:sweat_smile:
+if () {} else {}
+when () {1 -> 2 -> else -> }
+enum class Bla {}
+data class Bla(val blubb: String) {}
+private val logger = KotlinLogging.logger {}
+
+c:\ProgramData\Microsoft\Windows\Startm~1\Programs\powerpoint
+notepad++
+c:\ProgramData\Microsoft\Windows\Startm~1\Programs\word
+c:\ProgramData\Microsoft\Windows\Startm~1\Programs\openlens
+firefox
+outlook
+explorer
+calc
+c:\csp\cmder\Cmder.exe
