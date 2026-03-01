@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/pointing.h>
 #include "inc/helpers.h"
 
 // Layers
@@ -130,7 +129,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &kp LC(X)  &kp LC(C)  &kp LC(V)  &mt LSHFT SPACE &mt LSHFT SPACE LEADER_HT(NUMSYM) &hm NAVFN CMD &hm NAVFN CMD       ___               ___                &kp N2
             ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___                                 
             >;
-            sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP>;
         };
 
 /*
@@ -156,7 +154,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &kp LC(X)  &kp LC(C) &kp LC(V) &mt LSHFT SPACE &mt LSHFT SPACE LEADER_HT(NUMSYM) &hm NAVFN CMD &hm NAVFN CMD ___      ___           ___
             ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___                                 
             >;
-            sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP>;
         };
 
 /*
@@ -182,7 +179,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &kp LC(X) &kp LC(C) &kp LC(V) &mt LSHFT SPACE &mt LSHFT SPACE LEADER_HT(NUMSYM) &hm NAVFN CMD &hm NAVFN CMD ___           ___               ___
             ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___                                 
             >;
-            sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP>;
         };
 
 /*
@@ -208,7 +204,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___           ___        ___        ___          ___          ___ ___ ___ ___ ___         ___
             ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___                                 
             >;
-            sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP>;
         };
 
 /*
@@ -234,7 +229,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___       ___       ___            ___           ___ ___ ___         ___       ___       ___ ___
             ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___                                 
             >;
-            sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP>;
         };
     };
 /*
