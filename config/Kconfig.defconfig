@@ -1,9 +1,13 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
 if SHIELD_ATAKI
 
 config ZMK_KEYBOARD_NAME
     default "AtaKi"
+
+endif
+
+if SHIELD_ATAKI_KATANA
+
+config ZMK_KEYBOARD_NAME
+    default "AtaKi_Katana"
 
 endif
