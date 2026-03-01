@@ -19,4 +19,6 @@
 #
 ---
 include:
-  - board: ferris_rev02
+#  - board: ferris_rev02
+  - board: ataki
+    shield: nice_nano_v2
