@@ -71,7 +71,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
         encoder_scroll: encoder_scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_Y(-100)>, <&msc MOVE_Y(100)>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
     };
 
