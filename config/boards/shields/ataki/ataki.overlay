@@ -6,7 +6,7 @@
         #key-cells = <7>;
     };
 
-    #include "../../../inc/qwerty_layout.h"
+    #include "inc/qwerty_layout.h"
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &qwerty_layout;

@@ -6,7 +6,7 @@
         #key-cells = <7>;
     };
 
-    #include "../../../inc/katana_layout.h"
+    #include "inc/katana_layout.h"
 
     chosen {
         zmk,kscan = &kscan0;

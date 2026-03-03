@@ -34,7 +34,7 @@ MY_HOLD_TAP(dot_morph, &dot_exc, &kp)
 MY_HOLD_TAP(comma_morph, &comma_qust, &kp)
 MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
 
-#include "../../../inc/urob_leader.h"
+#include "inc/urob_leader.h"
 
 / {
     behaviors {
@@ -65,7 +65,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <300>;
-            bindings = <&mo>, <&leader>;       // Template, wird vom Makro ersetzt
+            bindings = <&mo>, <&leader>;
         };
         
         encoder_scroll: encoder_scroll {
@@ -83,8 +83,8 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
         };
     };
 
-#include "../../../inc/leader_macros.h" 
-#include "../../../inc/combos.h" 
+#include "inc/leader_macros.h" 
+#include "inc/combos.h" 
     
  // cheat-sheet for indexes
  // ┌────┬──┬──┬──┬──┬──┬──┬──┬──┬────┐
