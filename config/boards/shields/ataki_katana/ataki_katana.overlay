@@ -65,10 +65,10 @@
         sensors = <&central_encoder>;
         triggers-per-rotation = <20>;
     };
+};
 
-    &msc_input_listener {
-        input-processors = <>;
-    };
+&msc_input_listener {
+    input-processors = <>;
 };
 
 // enable these if you want debug logging (use PuTTy with USB10/115200 or similar)
