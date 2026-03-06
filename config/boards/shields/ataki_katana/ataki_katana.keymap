@@ -67,12 +67,13 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             tapping-term-ms = <300>;
             bindings = <&mo>, <&leader>;
         };
+    };
+
         
-        encoder_scroll: encoder_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        };
+    encoder_scroll: encoder_scroll {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
     };
 
     conditional_layers {
