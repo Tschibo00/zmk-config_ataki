@@ -66,6 +66,9 @@
         triggers-per-rotation = <20>;
     };
 };
+
+// enable these if you want debug logging (use PuTTy with USB10/115200 or similar)
+/*
 / {
     chosen {
         zephyr,console = &cdc_acm_uart0;
@@ -77,3 +80,4 @@
         compatible = "zephyr,cdc-acm-uart";
     };
 };
+*/
