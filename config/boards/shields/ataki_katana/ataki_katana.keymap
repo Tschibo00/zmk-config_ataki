@@ -37,6 +37,11 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
 
 #include "inc/urob_leader.h"
 
+&msc {
+    time-to-max-speed-ms = <80>;
+    acceleration-exponent = <10>;
+};
+
 / {
     behaviors {
        ht: hold_tap {
