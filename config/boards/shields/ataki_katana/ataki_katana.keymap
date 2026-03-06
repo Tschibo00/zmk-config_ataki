@@ -73,7 +73,7 @@ encoder_scroll: encoder_scroll {
     compatible = "zmk,behavior-sensor-rotate";
     #sensor-binding-cells = <0>;
     tap-ms = <10>;
-    bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+    bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 };
     conditional_layers {
         compatible = "zmk,conditional-layers";
