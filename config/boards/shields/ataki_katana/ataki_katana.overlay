@@ -65,12 +65,9 @@
         sensors = <&central_encoder>;
         triggers-per-rotation = <20>;
     };
-};
 
-/ {
-    trackpad_listener: trackpad_listener {
-        compatible = "zmk,input-listener";
-        device = <&central_encoder>;
+    &msc_input_listener {
+        input-processors = <>;
     };
 };
 
