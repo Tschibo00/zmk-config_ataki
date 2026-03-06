@@ -68,6 +68,11 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             bindings = <&mo>, <&leader>;
         };
     };
+    encoder_scroll: encoder_scroll {
+        compatible = "zmk,behavior-sensor-rotate-var";
+        #sensor-binding-cells = <2>;
+        bindings = <&msc>, <&msc>;
+    };
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -129,7 +134,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &ht LGUI Z &ht LALT X &ht LCTL C &ht LSHFT D &kp V           &kp K &ht RSHFT H &comma_morph RCTL 0 &dot_morph RALT 0 &apos_morph RGUI 0
                                            &mt LSHFT SPACE LEADER_HT(NUMSYM) &hm NAVFN CMD
             >;
-            sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&encoder_scroll SCRL_DOWN SCRL_UP>;
         };
 
 /*
@@ -154,7 +159,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &kp DOLLAR &kp PRCNT &mc_caret &kp HASH   &kp AMPS        &kp SEMI  &kp RPAR &kp RBKT &kp RBRC &kp LS(DOT)      
                                            &mt LSHFT SPACE LEADER_HT(NUMSYM) &hm NAVFN CMD  
             >;
-            sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&encoder_scroll SCRL_DOWN SCRL_UP>;
         };
 
 /*
@@ -179,7 +184,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &kp F11 &kp F12 &kp LC(C) &kp LC(X) &kp LC(V)       &kp LS(LC(LEFT)) &kp LC(LEFT) &kp LS(DOWN) &kp LC(RIGHT) &kp LS(LC(RIGHT))   
                                      &mt LSHFT SPACE LEADER_HT(NUMSYM) &hm NAVFN CMD
             >;
-            sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&encoder_scroll SCRL_DOWN SCRL_UP>;
         };
 
 /*
@@ -204,7 +209,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &bt BT_DISC 1 ___        ___        &bt BT_SEL 1 &kp C_MUTE   ___ ___ ___ ___ ___       
             ___           ___        ___
             >;
-            sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&encoder_scroll SCRL_DOWN SCRL_UP>;
         };
 
 /*
@@ -229,7 +234,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___       ___       ___           ___ ___ ___ ___         ___            ___ ___
             ___       ___       ___
             >;
-            sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&encoder_scroll SCRL_DOWN SCRL_UP>;
         };
     };
 /*
