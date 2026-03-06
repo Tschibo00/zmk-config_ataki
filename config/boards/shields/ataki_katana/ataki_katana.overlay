@@ -67,6 +67,13 @@
     };
 };
 
+/ {
+    trackpad_listener: trackpad_listener {
+        compatible = "zmk,input-listener";
+        device = <&central_encoder>;
+    };
+};
+
 // enable these if you want debug logging (use PuTTy with USB10/115200 or similar)
 / {
     chosen {
