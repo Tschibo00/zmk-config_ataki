@@ -30,6 +30,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
+      revision: v0.3      # ← das fehlt bei dir!
       import: app/west.yml
 
     # ZMK modules
