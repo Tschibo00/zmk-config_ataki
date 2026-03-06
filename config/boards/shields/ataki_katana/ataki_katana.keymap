@@ -69,13 +69,12 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
         };
     };
 
-        
-    encoder_scroll: encoder_scroll {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-    };
-
+encoder_scroll: encoder_scroll {
+    compatible = "zmk,behavior-sensor-rotate";
+    #sensor-binding-cells = <0>;
+    tap-ms = <10>;
+    bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+};
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
