@@ -128,7 +128,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
  */
         default_layer {
             bindings = <
-            &kp Q      &kp W      &kp E      &kp R           &kp T           &kp Y                 &kp U         &kp I               &kp O             &kp P              &kp LC(Z)
+            &kp A      &kp W      &kp E      &kp R           &kp T           &kp Y                 &kp U         &kp I               &kp O             &kp P              &kp LC(Z)
             &kp A      &kp S      &kp D      &kp F           &kp G           &kp H                 &kp J         &kp K               &kp L             &kp MINUS
             &ht LGUI Z &ht LALT X &ht LCTL C &ht LSHFT V     &kp B           &kp N                 &ht RSHFT M   &comma_morph RCTL 0 &dot_morph RALT 0 &apos_morph RGUI 0
             &kp LC(X)  &kp LC(C)  &kp LC(V)  &mt LSHFT SPACE &mt LSHFT SPACE &hm NUMSYM MC_ONESHOT &hm NAVFN CMD &hm NAVFN CMD       ___               ___                &kp N2
