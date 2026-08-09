@@ -71,7 +71,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
         leader_ht: leader_ht {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <300>;
             bindings = <&mo>, <&leader>;
         };
