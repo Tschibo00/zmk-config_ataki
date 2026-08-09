@@ -20,8 +20,8 @@
 /* How quickly Combo keys must be pressed together */
 #define COMBO_TIMEOUT_MS 30
 /* Macro timers; can be increased for systems that don't like 0ms Macros */
-#define FAST_MACRO_TAP_MS 0
-#define FAST_MACRO_WAIT_MS 0
+#define FAST_MACRO_TAP_MS 30
+#define FAST_MACRO_WAIT_MS 30
 
 #define LEADER_HT(hold_layer) &leader_ht hold_layer 0
 
