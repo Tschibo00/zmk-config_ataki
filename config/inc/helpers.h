@@ -77,18 +77,3 @@
             }; \
         }; \
     };
-
-#define ZMK_LEADER_SEQUENCE(name, leader_bindings, leader_sequence) \
-    / { \
-        behaviors { \
-            leader: leader { \
-                compatible = "zmk,behavior-leader-key"; \
-                #binding-cells = <0>; \
-                ignore-keys = <LSHFT RSHFT>; \
-                leader_sequence_ ## name { \
-                    bindings = <leader_bindings>; \
-                    sequence = <leader_sequence>; \
-                }; \
-            }; \
-        }; \
-    };
