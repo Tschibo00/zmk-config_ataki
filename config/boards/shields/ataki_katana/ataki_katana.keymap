@@ -253,90 +253,14 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
 // ====== Leader-Ersatz via Sticky-Layer (stabil statt &leader) ======
         mc_oneshot {
             bindings = <
-            &u_q  ___   toE   &u_r  toT     &u_y  &u_u  &u_i  ___   toP   ___
-            &u_a  toS   &u_d  &u_f  ___     &u_h  &u_j  &u_k  &u_l  ___
-            &u_z  toX   &u_c  &u_v  &u_b    toN   toM   ___   ___   &u_apo
-            &u_x  ___   ___   ___   &u_lft  ___   &u_rgt ___  ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
+             ___       ___       ___           ___ ___ ___ ___         ___            ___ ___
+            ___       ___       ___           ___ ___ ___ ___         ___            ___ ___
+            ___       ___       ___           ___ ___ ___ ___         ___            ___ ___
+            ___       ___       ___
             >;
         };
-
-        // Mongo commands (f,l,a,r,t,n,e,o,c + Selbstreferenz m)
-        mc_m {
-            bindings = <
-            ___   ___   &u_me  &u_mr  &u_mt   ___   ___   ___   &u_mo  ___   ___
-            &u_ma ___   ___    &u_mf  ___     ___   ___   ___   &u_ml  ___
-            ___   ___   &u_mc  ___    ___     &u_mn &u_m  ___   ___   ___
-            ___   ___   ___    ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-            >;
-        };
-
-        // Status messages (w,f,b,l,u,a,m + Selbstreferenz s)
-        mc_s {
-            bindings = <
-            ___   &u_sw ___   ___    ___     ___   &u_su ___   ___   ___   ___
-            &u_sa &u_s  ___   &u_sf  ___     ___   ___   ___   &u_sl ___
-            ___   ___   ___   ___    &u_sb   ___   &u_sm ___   ___   ___
-            ___   ___   ___   ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-            >;
-        };
-
-        // Namen (f,p,b,j,r,s,c,d,k + Selbstreferenz n)
-        mc_n {
-            bindings = <
-            ___   ___   ___   &u_nr  ___     ___   ___   ___   ___   &u_np ___
-            ___   &u_ns &u_nd &u_nf  ___     ___   &u_nj &u_nk ___   ___
-            ___   ___   &u_nc ___    &u_nb   &u_n  ___   ___   ___   ___
-            ___   ___   ___   ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-            >;
-        };
-
-        // Text-Snippets (p,l,a,s,m,e,z,c,d,k + Selbstreferenz t)
-        mc_t {
-            bindings = <
-            ___   ___   &u_te ___    &u_t    ___   ___   ___   ___   &u_tp ___
-            &u_ta &u_ts &u_td ___    ___     ___   ___   &u_tk &u_tl ___
-            &u_tz ___   &u_tc ___    ___     ___   &u_tm ___   ___   ___
-            ___   ___   ___   ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-            >;
-        };
-
-        // Emojis (w,f,p,y,r,s,t,m,o,c,d,v,k,h + Selbstreferenz e)
-        mc_e {
-            bindings = <
-            ___   &u_ew &u_e  &u_er  &u_et   &u_ey ___   ___   &u_eo &u_ep ___
-            ___   &u_es &u_ed &u_ef  ___     &u_eh ___   &u_en ___   ___
-            ___   ___   &u_ec &u_eb  ___     ___   &u_em ___   ___   ___
-            ___   ___   ___   ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-            >;
-        };
-
-        // Code-Snippets (w,l,e,i,d + Selbstreferenz p)
-        mc_p {
-            bindings = <
-            ___   &u_pw &u_pe ___    ___     ___   ___   &u_pi ___   &u_p  ___
-            ___   ___   &u_pd ___    ___     ___   ___   ___   &u_pl ___
-            ___   ___   ___   ___    ___     ___   ___   ___   ___   ___
-            ___   ___   ___   ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-            >;
-        };
-
-        // Programme starten (w,f,p,a,m,n,e,o + Selbstreferenz x -> Konsole)
-        mc_x {
-            bindings = <
-            ___   &u_xw &u_xe ___    ___     ___   ___   ___   &u_xo &u_xp ___
-            &u_xa ___   ___   &u_xf  ___     ___   ___   ___   ___   ___
-            ___   &u_xx &u_xc ___    ___     &u_xn &u_xm ___   ___   ___
-            ___   ___   ___   ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
-            >;
-        };
+// TODO add here the same sticky layer mechanism as for the regulare Ataki
+// beware that oneshot leader keyes need to be modified as doubletap, e.g. leader-m-m instead leader-m
     };
 /*
  * leader one-key (see inc/leader_macros.h for implementation)
