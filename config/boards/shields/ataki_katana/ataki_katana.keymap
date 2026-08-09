@@ -15,6 +15,23 @@
 #define CMD 4
 #define BASE_LAYERS BASE
 
+#define MC_ONESHOT 5
+#define MC_M       6
+#define MC_S       7
+#define MC_N       8
+#define MC_T       9
+#define MC_E       10
+#define MC_P       11
+#define MC_X       12
+
+#define toM &sl MC_M
+#define toS &sl MC_S
+#define toN &sl MC_N
+#define toT &sl MC_T
+#define toE &sl MC_E
+#define toP &sl MC_P
+#define toX &sl MC_X
+
 #define ___ &trans
 
 /* How quickly Combo keys must be pressed together */
