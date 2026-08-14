@@ -252,9 +252,9 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
 
         mc_oneshot {
             bindings = <
-            &u_q  &kp ESC &u_e  toP   &u_t    &u_y  &u_u  &u_i  ___   ___
-            &u_a  &u_s    toS   toT   ___     toM   toN   toE   &u_l  &u_p
-            &u_z  toX     &u_c  &u_v  &u_b    &u_k  &u_h  ___   ___   &u_apo
+            &u_q  &kp ESC &u_f  toP   &u_b    &u_j  &u_l  &u_u  ___   ___
+            &u_a  &u_r    toS   toT   ___     toM   toN   toE   &u_i  &u_o
+            &u_z  toX     &u_c  &u_d  &u_v    &u_k  &u_h  ___   ___   &u_apo
             &u_lft  &to 0  &u_rgt
 
 
