@@ -110,7 +110,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
 /*
  * combos (see inc/combos.h for implementation)
  * ┌──────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────────┐
- * │          │ +=Del=+=SftTab+ │+===Caps==+│     │ +=Del=+   │         │
+ * │          │ +=Del=+=SftTab+ │     │     │     │ +=Del=+   │         │
  * │          │     │     │     │     │     │     │     │     │         │
  * ├─────────┬┴────┬┴────┬┴────┬┴────┬┴┬────┴┬────┴┬────┴┬────┴┬────────┤
  * │         │ +=BkSp=+=Tab=+  │     │ │     │     │  +=BkSp=+ │        │
@@ -250,17 +250,90 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             sensor-bindings = <&encoder_scroll SCRL_DOWN SCRL_UP>;
         };
 
-// ====== Leader-Ersatz via Sticky-Layer (stabil statt &leader) ======
         mc_oneshot {
             bindings = <
-             ___       ___       ___           ___ ___ ___ ___         ___            ___ ___
-            ___       ___       ___           ___ ___ ___ ___         ___            ___ ___
-            ___       ___       ___           ___ ___ ___ ___         ___            ___ ___
-            ___       ___       ___
+            &u_q  &kp ESC &u_e  toP   &u_t    &u_y  &u_u  &u_i  ___   ___
+            &u_a  &u_s    toS   toT   ___     toM   toN   toE   &u_l  &u_p
+            &u_z  toX     &u_c  &u_v  &u_b    &u_k  &u_h  ___   ___   &u_apo
+            &u_lft  &to 0  &u_rgt
+
+
+//            ___   ___   ___   toP   ___      ___   ___   ___   ___   ___   
+//            ___   ___   toS   toT   ___      toM   toN   toE   ___   ___   
+//            ___   toX   ___   ___   ___      ___   ___   ___   ___   ___   
+
             >;
         };
-// TODO add here the same sticky layer mechanism as for the regulare Ataki
-// beware that oneshot leader keyes need to be modified as doubletap, e.g. leader-m-m instead leader-m
+
+        // Mongo commands (f,l,a,r,t,n,e,o,c + self-reference m)
+        mc_m {
+            bindings = <
+            ___   ___   &u_mf ___   ___      ___   &u_ml ___   ___   ___   
+            &u_ma &u_mr ___   &u_mt ___      ___   &u_mn &u_me ___   &u_mo
+            ___   ___   &u_mc ___   ___      ___   ___   ___   ___   ___   
+            ___   &to 0 ___
+            >;
+        };
+
+        // Status messages (w,f,b,l,u,a,m + self-reference s)
+        mc_s {
+            bindings = <
+            ___   &u_sw &u_sf ___   &u_sb    ___   &u_sl &u_su ___   ___   
+            &u_sa ___   ___   ___   ___      &u_sm ___   ___   ___   ___   
+            ___   ___   ___   ___   ___      ___   ___   ___   ___   ___   
+            ___   &to 0 ___
+            >;
+        };
+
+        // Namen (f,p,b,j,r,s,c,d,k + self-reference n)
+        mc_n {
+            bindings = <
+            ___   ___   &u_nf &u_np &u_nb    &u_nj ___   ___   ___   ___   
+            &u_na &u_nr &u_ns &u_nt ___      ___   ___   ___   ___   ___   
+            ___   ___   &u_nc &u_nd ___      &u_nk ___   ___   ___   ___   
+            ___   &to 0 ___
+            >;
+        };
+
+        // Text-Snippets (p,l,a,s,m,e,z,c,d,k + self-reference t)
+        mc_t {
+            bindings = <
+            ___   ___   ___   &u_tp ___      ___   &u_tl ___   ___   ___   
+            &u_ta ___   &u_ts ___   ___      &u_tm ___   &u_te ___   ___   
+            &u_tz ___   &u_tc &u_td ___      &u_tk ___   ___   ___   ___   
+            ___   &to 0 ___
+            >;
+        };
+
+        // Emojis (w,f,p,y,r,s,t,m,o,c,d,v,k,h + self-reference e)
+        mc_e {
+            bindings = <
+            ___   &u_ew &u_ef &u_ep ___      ___   ___   ___   &u_ey ___   
+            ___   &u_er &u_es &u_et ___      &u_em ___   ___   ___   &u_eo   
+            ___   ___   &u_ec &u_ed &u_ev    &u_ek &u_eh ___   ___   ___   
+            ___   &to 0 ___
+            >;
+        };
+
+        // Code-Snippets (w,l,e,i,d + self-reference p)
+        mc_p {
+            bindings = <
+            ___   &u_pw ___   ___   ___      ___   &u_pl ___   ___   ___   
+            ___   ___   ___   ___   ___      ___   ___   &u_pe &u_pi ___   
+            ___   ___   ___   &u_pd ___      ___   ___   ___   ___   ___   
+            ___   &to 0 ___
+            >;
+        };
+
+        // Programme starten (w,f,p,a,m,n,e,o + self-reference x)
+        mc_x {
+            bindings = <
+            ___   &u_xw &u_xf &u_xp ___      ___   ___   ___   ___   ___   
+            &u_xa ___   ___   ___   ___      &u_xm &u_xn &u_xe ___   &u_xo
+            ___   &u_xx &u_xc ___   ___      ___   ___   ___   ___   ___   
+            ___   &to 0 ___
+            >;
+        };
     };
 /*
  * leader one-key (see inc/leader_macros.h for implementation)

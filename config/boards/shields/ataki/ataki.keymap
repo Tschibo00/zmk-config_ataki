@@ -188,14 +188,14 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
 
 /*
  * ┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬───────┐
- * │Boot    │track│play │track│vol  │msWhl│msWhl│mouse│msWhl│mouse│       │
- * │        │prev │pause│next │up   │up   │left │up   │right│acc2 │       │
+ * │Boot    │track│play │track│vol  │     │     │     │     │     │       │
+ * │        │prev │pause│next │up   │     │     │     │     │     │       │
  * ├────────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴───────┤
- * │RGB      │RGB  │stop │RGB  │vol  │msWhl│mouse│mouse│mouse│mouse       │
- * │Sat+     │Lum+ │     │Hue+ │down │down │left │down │right│acc1        │
+ * │RGB      │RGB  │stop │RGB  │vol  │     │     │     │     │            │
+ * │Sat+     │Lum+ │     │Hue+ │down │     │     │     │     │            │
  * ├─────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬──────────┤
- * │RGB        │RGB  │RGB  │RGB  │vol  │RGB  │mouse│mouse│mouse│mouse     │
- * │Sat-       │Lum- │Mode │Hue- │mute │OnOff│btn1 │btn3 │btn2 │acc0      │
+ * │RGB        │RGB  │RGB  │RGB  │vol  │     │     │     │     │          │
+ * │Sat-       │Lum- │Mode │Hue- │mute │     │     │     │     │          │
  * ├──────┬────┴┬────┴┬────┴┬────┴─┬───┴─┬───┴──┬──┴──┬──┴──┬──┴──┬───────┤
  * │      │     │     │     │      │     │      │     │     │     │       │
  * │      │     │     │     │      │     │      │     │     │     │       │
@@ -236,13 +236,12 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             >;
         };
 
-// ====== Leader-Ersatz via Sticky-Layer (stabil statt &leader) ======
         mc_oneshot {
             bindings = <
-            &u_q  ___   toE   &u_r  toT     &u_y  &u_u  &u_i  ___   toP   ___
-            &u_a  toS   &u_d  &u_f  ___     &u_h  &u_j  &u_k  &u_l  &u_p
-            &u_z  toX   &u_c  &u_v  &u_b    toN   toM   ___   ___   &u_apo
-            &u_x  ___   ___   ___   &u_lft  ___   &u_rgt ___  ___   ___  ___
+            &u_q  &kp ESC toE   &u_r  toT     &u_y  &u_u  &u_i  ___   toP   ___
+            &u_a  toS     &u_d  &u_f  ___     &u_h  &u_j  &u_k  &u_l  &u_p
+            &u_z  toX     &u_c  &u_v  &u_b    toN   toM   ___   ___   &u_apo
+            &u_x  ___     ___   ___   &u_lft  &to 0 &u_rgt ___  ___   ___  ___
             ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
@@ -313,7 +312,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             >;
         };
 
-        // Programme starten (w,f,p,a,m,n,e,o + self-reference x -> Konsole)
+        // Programme starten (w,f,p,a,m,n,e,o + self-reference x)
         mc_x {
             bindings = <
             ___   &u_xw &u_xe ___    ___     ___   ___   ___   &u_xo &u_xp ___
