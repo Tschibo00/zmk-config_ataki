@@ -289,7 +289,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
         mc_n {
             bindings = <
             ___   ___   &u_nf &u_np &u_nb    &u_nj ___   ___   ___   ___   
-            &u_na &u_nr &u_ns &u_nt ___      ___   ___   ___   ___   ___   
+            ___   &u_nr &u_ns ___   ___      ___   ___   ___   ___   ___   
             ___   ___   &u_nc &u_nd ___      &u_nk ___   ___   ___   ___   
             ___   &to 0 ___
             >;
