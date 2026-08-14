@@ -1,7 +1,7 @@
     combos {
         compatible = "zmk,combos";
         
-        COMBO(cmb_caps,      4  6,  &caps_word)
+//         COMBO(cmb_caps,      4  6,  &caps_word)
         COMBO(cmb_tab,       13 14, &kp TAB)
         COMBO(cmb_sfttab,    2  3,  &kp LS(TAB))
         COMBO(cmb_bksp_left, 12 13, &kp BSPC)

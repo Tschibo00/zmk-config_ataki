@@ -96,7 +96,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
 /*
  * combos (see inc/combos.h for implementation)
  * ┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬───────┐
- * │        │ +=Del=+=SftTab+ │+====Caps=====+  │ +=Del=+   │     │       │
+ * │        │ +=Del=+=SftTab+ │     │     │     │ +=Del=+   │     │       │
  * │        │     │     │     │     │     │     │     │     │     │       │
  * ├────────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴───────┤
  * │         │ +=BkSp=+=Tab=+  │     │     │     │  +=BkSp=+ │            │
@@ -240,14 +240,14 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
         mc_oneshot {
             bindings = <
             &u_q  ___   toE   &u_r  toT     &u_y  &u_u  &u_i  ___   toP   ___
-            &u_a  toS   &u_d  &u_f  ___     &u_h  &u_j  &u_k  &u_l  ___
+            &u_a  toS   &u_d  &u_f  ___     &u_h  &u_j  &u_k  &u_l  &u_o
             &u_z  toX   &u_c  &u_v  &u_b    toN   toM   ___   ___   &u_apo
             &u_x  ___   ___   ___   &u_lft  ___   &u_rgt ___  ___   ___  ___
             ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
 
-        // Mongo commands (f,l,a,r,t,n,e,o,c + Selbstreferenz m)
+        // Mongo commands (f,l,a,r,t,n,e,o,c + self-reference m)
         mc_m {
             bindings = <
             ___   ___   &u_me  &u_mr  &u_mt   ___   ___   ___   &u_mo  ___   ___
@@ -258,7 +258,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             >;
         };
 
-        // Status messages (w,f,b,l,u,a,m + Selbstreferenz s)
+        // Status messages (w,f,b,l,u,a,m + self-reference s)
         mc_s {
             bindings = <
             ___   &u_sw ___   ___    ___     ___   &u_su ___   ___   ___   ___
@@ -269,7 +269,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             >;
         };
 
-        // Namen (f,p,b,j,r,s,c,d,k + Selbstreferenz n)
+        // Namen (f,p,b,j,r,s,c,d,k + self-reference n)
         mc_n {
             bindings = <
             ___   ___   ___   &u_nr  ___     ___   ___   ___   ___   &u_np ___
@@ -280,7 +280,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             >;
         };
 
-        // Text-Snippets (p,l,a,s,m,e,z,c,d,k + Selbstreferenz t)
+        // Text-Snippets (p,l,a,s,m,e,z,c,d,k + self-reference t)
         mc_t {
             bindings = <
             ___   ___   &u_te ___    &u_t    ___   ___   ___   ___   &u_tp ___
@@ -291,7 +291,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             >;
         };
 
-        // Emojis (w,f,p,y,r,s,t,m,o,c,d,v,k,h + Selbstreferenz e)
+        // Emojis (w,f,p,y,r,s,t,m,o,c,d,v,k,h + self-reference e)
         mc_e {
             bindings = <
             ___   &u_ew &u_e  &u_er  &u_et   &u_ey ___   ___   &u_eo &u_ep ___
@@ -302,7 +302,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             >;
         };
 
-        // Code-Snippets (w,l,e,i,d + Selbstreferenz p)
+        // Code-Snippets (w,l,e,i,d + self-reference p)
         mc_p {
             bindings = <
             ___   &u_pw &u_pe ___    ___     ___   ___   &u_pi ___   &u_p  ___
@@ -313,7 +313,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             >;
         };
 
-        // Programme starten (w,f,p,a,m,n,e,o + Selbstreferenz x -> Konsole)
+        // Programme starten (w,f,p,a,m,n,e,o + self-reference x -> Konsole)
         mc_x {
             bindings = <
             ___   &u_xw &u_xe ___    ___     ___   ___   ___   &u_xo &u_xp ___
@@ -327,7 +327,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
 /*
  * leader one-key (see inc/leader_macros.h for implementation)
  * ┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬───────┐
- * │Lock    │     │Doubl│Comnt│Multi│MltCm│Multi│Dupli│     │     │enter  │
+ * │Lock    │     │Doubl│Comnt│Multi│MltCm│Multi│Dupli│     │     │       │
  * │        │     │Shift│     │Comnt│InteJ│Code │Line │     │     │       │
  * ├────────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴───────┤
  * │->       │WinR │PrtSc│Mute/│     │- [ ]│()   │[]   │{}   │´´          │
