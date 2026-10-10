@@ -18,3 +18,5 @@ include:
     shield: ataki
   - board: nice_nano_v2
     shield: ataki_katana
+  - board: nice_nano//zmk
+    shield: settings_reset
