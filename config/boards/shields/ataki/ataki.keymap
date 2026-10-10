@@ -132,7 +132,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &kp A      &kp S      &kp D      &kp F           &kp G           &kp H                 &kp J         &kp K               &kp L             &kp MINUS
             &ht LGUI Z &ht LALT X &ht LCTL C &ht LSHFT V     &kp B           &kp N                 &ht RSHFT M   &comma_morph RCTL 0 &dot_morph RALT 0 &apos_morph RGUI 0
             &kp LC(X)  &kp LC(C)  &kp LC(V)  &mt LSHFT SPACE &mt LSHFT SPACE &hm NUMSYM MC_ONESHOT &hm NAVFN CMD &hm NAVFN CMD       ___               ___                &kp N2
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___                                 
             >;
         };
 
@@ -157,7 +156,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &mc_tilde  &kp AT    &eql_bksl &star_pipe      &plus_slsh      &kp COLON             &kp LPAR      &kp LBKT      &kp LBRC &kp LS(COMMA)      
             &kp DOLLAR &kp PRCNT &mc_caret &kp HASH        &kp AMPS        &kp SEMI              &kp RPAR      &kp RBKT      &kp RBRC &kp LS(DOT)      
             &kp LC(X)  &kp LC(C) &kp LC(V) &mt LSHFT SPACE &mt LSHFT SPACE &hm NUMSYM MC_ONESHOT &hm NAVFN CMD &hm NAVFN CMD ___      ___           ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___                                 
             >;
         };
 
@@ -182,7 +180,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &kp F6    &kp F7    &kp F8    &kp F9          &kp F10         &kp HOME              &kp LEFT      &kp DOWN      &kp RIGHT     &kp END        
             &kp F11   &kp F12   &kp LC(C) &kp LC(X)       &kp LC(V)       &kp LS(LC(LEFT))      &kp LC(LEFT)  &kp LS(DOWN)  &kp LC(RIGHT) &kp LS(LC(RIGHT))   
             &kp LC(X) &kp LC(C) &kp LC(V) &mt LSHFT SPACE &mt LSHFT SPACE &hm NUMSYM MC_ONESHOT &hm NAVFN CMD &hm NAVFN CMD ___           ___               ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___                                 
             >;
         };
 
@@ -207,7 +204,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &bt BT_DISC 0 &bt BT_CLR &kp C_STOP &bt BT_SEL 0 &kp C_VOL_DN ___ ___ ___ ___ ___       
             &bt BT_DISC 1 ___        ___        &bt BT_SEL 1 &kp C_MUTE   ___ ___ ___ ___ ___       
             ___           ___        ___        ___          ___          ___ ___ ___ ___ ___         ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___                                 
             >;
         };
 
@@ -232,7 +228,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &kp RA(Q) &kp RA(S) ___            &kp LS(LC(F)) ___ ___ &kp RET     ___       ___       ___
             ___       ___       ___            ___           ___ ___ ___         ___       ___       ___
             ___       ___       ___            ___           ___ ___ ___         ___       ___       ___ ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___                                 
             >;
         };
 
@@ -242,7 +237,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &u_a  toS     &u_d  &u_f  ___     &u_h  &u_j  &u_k  &u_l  &u_p
             &u_z  toX     &u_c  &u_v  &u_b    toN   toM   ___   ___   &u_apo
             &u_x  ___     ___   ___   &u_lft  &to 0 &u_rgt ___  ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
 
@@ -253,7 +247,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &u_ma ___   ___    &u_mf  ___     ___   ___   ___   &u_ml  ___
             ___   ___   &u_mc  ___    ___     &u_mn &u_m  ___   ___   ___
             ___   ___   ___    ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
 
@@ -264,7 +257,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &u_sa &u_s  ___   &u_sf  ___     ___   ___   ___   &u_sl ___
             ___   ___   ___   ___    &u_sb   ___   &u_sm ___   ___   ___
             ___   ___   ___   ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
 
@@ -275,7 +267,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___   &u_ns &u_nd &u_nf  ___     ___   &u_nj &u_nk ___   ___
             ___   ___   &u_nc ___    &u_nb   &u_n  ___   ___   ___   ___
             ___   ___   ___   ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
 
@@ -286,7 +277,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &u_ta &u_ts &u_td ___    ___     ___   ___   &u_tk &u_tl ___
             &u_tz ___   &u_tc ___    ___     ___   &u_tm ___   ___   ___
             ___   ___   ___   ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
 
@@ -297,7 +287,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___   &u_es &u_ed &u_ef  ___     &u_eh ___   &u_en ___   ___
             ___   ___   &u_ec &u_eb  ___     ___   &u_em ___   ___   ___
             ___   ___   ___   ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
 
@@ -308,7 +297,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___   ___   &u_pd ___    ___     ___   ___   ___   &u_pl ___
             ___   ___   ___   ___    ___     ___   ___   ___   ___   ___
             ___   ___   ___   ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
 
@@ -319,7 +307,6 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &u_xa ___   ___   &u_xf  ___     ___   ___   ___   ___   ___
             ___   &u_xx &u_xc ___    ___     &u_xn &u_xm ___   ___   ___
             ___   ___   ___   ___    ___     &to 0 ___   ___   ___   ___  ___
-            ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___ ___
             >;
         };
     };
