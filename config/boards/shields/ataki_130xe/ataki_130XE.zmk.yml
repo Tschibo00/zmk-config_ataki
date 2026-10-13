@@ -1,0 +1,8 @@
+file_format: "1"
+id: ataki_130xe
+name: AtaKi_130XE
+type: shield
+url: https://github.com/tschibo00
+requires: [pro_micro]
+features:
+  - keys

@@ -1,0 +1,6 @@
+if SHIELD_ATAKI_130XE
+
+config ZMK_KEYBOARD_NAME
+    default "AtaKi_130XE"
+
+endif
