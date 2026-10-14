@@ -8,11 +8,11 @@ The PCB supports multiple configurations, including Katana with 0.5U indent and 
 ![layout_options](misc/layout_options.png)
 
 ## WARNING
-This project is a personal project, i just built one prototype. It's not considered complete, nor tested or error-free.
+**This project is a personal project, i just built one prototype. It's not considered complete, nor tested or error-free.**
 
-I won't develop this much, just releasing it as-is for anybody knowledgable picking up and maybe building upon it.
+**I won't develop this much, just releasing it as-is for anybody knowledgable picking up and maybe building upon it.**
 
-It is NOT ready to take the files and produce a working keyboard!
+**It is NOT ready to take the files and produce a working keyboard!**
 
 ## How to build
 To not struggle when soldering, it should be done in the following order:
@@ -29,7 +29,7 @@ To not struggle when soldering, it should be done in the following order:
 - [x] add PCB artwork
 - [x] order the thing
 - [x] hack firmware
-- [ ] design Atari 130XE style case including function keys
+- [x] design Atari 130XE style case including function keys
 - [ ] boast about it on r/mk
 - [x] fix PCB (esp. encoder mount pads)
 - [x] add note to U1 to put nano on bottom side
@@ -41,3 +41,6 @@ To not struggle when soldering, it should be done in the following order:
 - [x] create base keymap
 - [x] create additional keymaps, e.g. Katana
 - [x] add LED connector
+- [ ] fix Joystick connection, using r5/r6, swapping column/row Zusage
+- [ ] add function board connector
+- [ ] Change battery connector to use PH2.0 on PCB
