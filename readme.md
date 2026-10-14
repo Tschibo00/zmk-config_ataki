@@ -29,7 +29,7 @@ To not struggle when soldering, it should be done in the following order:
 - [x] add PCB artwork
 - [x] order the thing
 - [x] hack firmware
-- [ ] design Atari 130XE style case including function keys
+- [x] design Atari 130XE style case including function keys
 - [ ] boast about it on r/mk
 - [x] fix PCB (esp. encoder mount pads)
 - [x] add note to U1 to put nano on bottom side
@@ -41,3 +41,6 @@ To not struggle when soldering, it should be done in the following order:
 - [x] create base keymap
 - [x] create additional keymaps, e.g. Katana
 - [x] add LED connector
+- [ ] fix Joystick connection, using r5/r6, swapping column/row Zusage
+- [ ] add function board connector
+- [ ] Change battery connector to use PH2.0 on PCB
