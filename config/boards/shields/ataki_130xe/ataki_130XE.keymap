@@ -86,13 +86,13 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
  // cheat-sheet for indexes
  //                   ───────────────
  //                  /35/36/37/38/39/
- // ┌───┬──┬──┬──┬──┬──┬──┬──┬──┬──┬────┐
- // │0  │1 │2 │3 │4 │5 │6 │7 │8 │9 │ 10 │
- // ├───┴┬─┴┬─┴┬─┴┬─┴┬─┴┬─┴┬─┴┬─┴┬─┴┬───┤
- // │11  │12│13│14│15│16│17│18│19│20│21 │
- // ├────┴─┬┴─┬┴─┬┴─┬┴─┬┴─┬┴─┬┴─┬┴──┴┬──┤
- // │22    │23│24│25│26│27│28│29│ 30 │31│
- // └─────┬┴──┴──┴──┴┬─┴┬─┴──┴──┴─┬──┴──┘
+ // ┌───┬──┬──┬──┬──┬──┬──┬──┬──┬──┬────┐ ┌────────┐ ┌────────┐
+ // │0  │1 │2 │3 │4 │5 │6 │7 │8 │9 │ 10 │ │      35│ │      40│
+ // ├───┴┬─┴┬─┴┬─┴┬─┴┬─┴┬─┴┬─┴┬─┴┬─┴┬───┤ │   36   │ │   41   │
+ // │11  │12│13│14│15│16│17│18│19│20│21 │ │37    38│ │42    43│
+ // ├────┴─┬┴─┬┴─┬┴─┬┴─┬┴─┬┴─┬┴─┬┴──┴┬──┤ │   39   │ │   44   │
+ // │22    │23│24│25│26│27│28│29│ 30 │31│ └────────┘ └────────┘
+ // └─────┬┴──┴──┴──┴┬─┴┬─┴──┴──┴─┬──┴──┘  joystick1  joystick2
  //       │     32   │33│    34   │
  //       └──────────┴──┴─────────┘
 /*
@@ -141,6 +141,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &ht LGUI Z &ht LALT X &ht LCTL C &ht LSHFT V     &kp B           &kp N                 &ht RSHFT M   &comma_morph RCTL 0 &dot_morph RALT 0 &apos_morph RGUI 0 &kp N3
                                      &mt LSHFT SPACE                     &hm NUMSYM MC_ONESHOT                   &hm NAVFN CMD
             &kp N1  &kp N2  &kp N3  &kp N4  &kp N5
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
 
@@ -169,6 +170,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &kp DOLLAR &kp PRCNT &mc_caret &kp HASH        &kp AMPS        &kp SEMI              &kp RPAR      &kp RBKT      &kp RBRC &kp LS(DOT)   ___
                                      &mt LSHFT SPACE                     &hm NUMSYM MC_ONESHOT                   &hm NAVFN CMD
             &kp N1  &kp N2  &kp N3  &kp N4  &kp N5
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
 
@@ -197,6 +199,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &kp F11   &kp F12   &kp LC(C) &kp LC(X)       &kp LC(V)       &kp LS(LC(LEFT))      &kp LC(LEFT)  &kp LS(DOWN)  &kp LC(RIGHT) &kp LS(LC(RIGHT)) ___
                                      &mt LSHFT SPACE                     &hm NUMSYM MC_ONESHOT                   &hm NAVFN CMD
             &kp N1  &kp N2  &kp N3  &kp N4  &kp N5
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
 
@@ -225,6 +228,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &bt BT_DISC 1 ___        ___        &bt BT_SEL 1 &kp C_MUTE   ___ ___ ___ ___ ___         ___
                                     ___       ___        ___
             ___ ___ ___ ___ ___
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
 
@@ -253,6 +257,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___       ___       ___            ___           ___ ___ ___         ___       ___       ___ ___
                                     ___       ___        ___
             ___ ___ ___ ___ ___
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
 
@@ -263,6 +268,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &u_z  toX     &u_c  &u_v  &u_b    toN   toM   ___   ___   &u_apo ___
                           &u_lft     &to 0      &u_rgt
             ___ ___ ___ ___ ___
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
 
@@ -274,6 +280,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___   ___   &u_mc  ___    ___     &u_mn &u_m  ___   ___    ___   ___
                           ___        &to 0      ___
             ___ ___ ___ ___ ___
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
 
@@ -285,6 +292,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___   ___   ___   ___    &u_sb   ___   &u_sm ___   ___   ___   ___
                           ___        &to 0      ___
             ___ ___ ___ ___ ___
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
 
@@ -296,6 +304,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___   ___   &u_nc ___    &u_nb   &u_n  ___   ___   ___   ___   ___
                           ___        &to 0      ___
             ___ ___ ___ ___ ___
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
 
@@ -307,6 +316,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             &u_tz ___   &u_tc ___    ___     ___   &u_tm ___   ___   ___   ___
                           ___        &to 0      ___
             ___ ___ ___ ___ ___
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
 
@@ -318,6 +328,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___   ___   &u_ec &u_eb  ___     ___   &u_em ___   ___   ___   ___
                           ___        &to 0      ___
             ___ ___ ___ ___ ___
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
 
@@ -329,6 +340,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___   ___   ___   ___    ___     ___   ___   ___   ___   ___   ___
                           ___        &to 0      ___
             ___ ___ ___ ___ ___
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
 
@@ -340,6 +352,7 @@ MY_HOLD_TAP(apos_morph, &mc_apos, &kp)
             ___   &u_xx &u_xc ___    ___     &u_xn &u_xm ___   ___   ___   ___
                           ___        &to 0      ___
             ___ ___ ___ ___ ___
+            &kp SPACE &kp W &kp A &kp D &kp S           &kp RCTL &kp UP &kp LEFT &kp RIGHT &kp DOWN
             >;
         };
     };
