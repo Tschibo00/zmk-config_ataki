@@ -25,6 +25,13 @@ To not struggle when soldering, it should be done in the following order:
 - solder remaining switches
   - triple-check with every row that your soldering the correct layout. put the required caps on the switches to see, which holes you need to solder to
 
+## Special considerations for the Atari 130XE "replica" layout
+- The Atari has an unusual layout which leads to skipped columns in the keyboard matrix, take notes in the overlay file.
+- columns 12/13 are used for the joystick ports only. These must be soldered directly to the nice!nano pads p1.01 and p1.02 (not broken out as pins!)
+- The function keys breakout board needs to be soldered to the respective columns and to row 4. Easily done by scraping off solder mask on the long r4 line at top of PCB
+- The Atari keys need adapters for MX stems. The case already accounts for the taller keys
+- The 3u keys also need a MX-MX adapter to achieve the same height
+
 # Todos
 - [x] add PCB artwork
 - [x] order the thing
