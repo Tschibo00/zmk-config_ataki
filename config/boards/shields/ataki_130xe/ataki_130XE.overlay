@@ -69,10 +69,3 @@
         compatible = "zephyr,cdc-acm-uart";
     };
 };
-
-
-links r3
-unten r2
-feuer r5
- r1
- r4
