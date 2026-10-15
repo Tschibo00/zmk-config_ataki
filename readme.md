@@ -48,6 +48,6 @@ To not struggle when soldering, it should be done in the following order:
 - [x] create base keymap
 - [x] create additional keymaps, e.g. Katana
 - [x] add LED connector
-- [ ] fix Joystick connection, using r5/r6, swapping column/row Zusage
-- [ ] add function board connector
+- [ ] fix Joystick connection, ~~using r5/r6, swapping column/row~~ change to unused columns
+- [ ] add function board connector to PCB
 - [ ] Change battery connector to use PH2.0 on PCB
