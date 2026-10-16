@@ -51,3 +51,5 @@ To not struggle when soldering, it should be done in the following order:
 - [ ] fix Joystick connection, ~~using r5/r6, swapping column/row~~ change to unused columns
 - [ ] add function board connector to PCB
 - [ ] Change battery connector to use PH2.0 on PCB
+- [ ] add function keys: "help", tbd, CtrlX+M, tbd, tbd
+- [ ] increase delay in sequences
